@@ -1,0 +1,86 @@
+/*============================================================
+ * General
+==============================================================*/
+
+li.product, 
+.product-template-default #main{
+    position:relative;
+}
+
+/* set for product detail section with js for the corner style*/
+li.product{
+    overflow: hidden;
+}
+
+span.jws-discount-display {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-family: Arial, Verdana, sans-serif;
+    padding: 6px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    border-radius:25px;
+    font-size: 16px;
+    z-index: 1;
+}
+
+span.jws-discount-display span{
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    text-align:center;
+    position: relative;
+    top: 1px;
+}
+
+span.jws-discount-display span.off {
+    text-transform: uppercase;
+}
+
+span.jws-discount-display.boxshadow{
+    -webkit-box-shadow: gray -1px 1px 2px;
+    -moz-box-shadow: gray -1px 1px 2px;
+    box-shadow: gray -1px 1px 2px;
+}
+
+/*============================================================
+ * Pre-defined Style Types
+==============================================================*/
+span.jws-discount-display.box {
+    top:0;
+    right:0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+span.jws-discount-display.corner {
+    top: -11px;
+    right: -41px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    padding: 21px 40px 1px 40px;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}
+
+span.jws-discount-display.corner span{
+    top: 0;
+}
+
+.ie8 .jws-discount-display.corner {
+    display:none !important;
+}
+
+@media (max-width:767px){
+    .product-template-default .jws-discount-display:not(.corner){
+        margin-top: -10px     
+    }
+}
+
+
